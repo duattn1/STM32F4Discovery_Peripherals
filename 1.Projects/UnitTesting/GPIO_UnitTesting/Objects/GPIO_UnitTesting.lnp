@@ -1,0 +1,13 @@
+--cpu Cortex-M4.fp
+".\objects\gpio_driver.o"
+".\objects\main.o"
+".\objects\ut_main.o"
+".\objects\ut_utilities.o"
+".\objects\unity.o"
+".\objects\ut_gpio_driver.o"
+".\objects\retarget_io.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\GPIO_UnitTesting.map" -o .\Objects\GPIO_UnitTesting.axf

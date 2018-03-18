@@ -1,0 +1,9 @@
+.\objects\unity.o: UnitTesting\unity\unity.c
+.\objects\unity.o: UnitTesting\unity\unity.h
+.\objects\unity.o: UnitTesting\unity\unity_internals.h
+.\objects\unity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\setjmp.h
+.\objects\unity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\unity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\unity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\unity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\unity.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
