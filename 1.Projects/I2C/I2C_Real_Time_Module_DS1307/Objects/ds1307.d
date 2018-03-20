@@ -1,0 +1,17 @@
+.\objects\ds1307.o: Src\DS1307.c
+.\objects\ds1307.o: Src\../Inc/DS1307.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h
+.\objects\ds1307.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\ds1307.o: Src\../Inc/../Inc/I2C_setup.h
+.\objects\ds1307.o: Src\../Inc/../Inc/../Inc/GPIO_driver.h
+.\objects\ds1307.o: Src\../Inc/../Inc/../Inc/I2C_driver.h
