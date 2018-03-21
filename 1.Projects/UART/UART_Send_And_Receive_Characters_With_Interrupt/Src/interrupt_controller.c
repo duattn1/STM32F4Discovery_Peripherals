@@ -17,7 +17,7 @@ void USARTInterruptConfig(void){
 
 void USARTxConfig(USART_TypeDef *UARTx){
 	
-	/* Enable TXNE interrupt */
+	/* Enable RXNE interrupt */
 	UARTx->CR1 |= USARTX_RXNE_INTERRUPT_ENABLE;
 }
 

@@ -3,20 +3,11 @@
 
 
 void SPIInit(SPI_TypeDef *SPIx, uint32_t mode, uint32_t baudrate, uint32_t direction, uint32_t cpha, uint32_t cpol, uint32_t size, uint32_t firstBit){
-	GPIOInit(GPIOB, SPI_NSS, OUTPUT, PUSHPULL, HIGHSPEED, NOPULL, NOAF);
-	
-	GPIOInit(GPIOB, SPI_CLK, ALTFUNCTION, PUSHPULL, HIGHSPEED, NOPULL, AF5);
-	GPIOInit(GPIOB, SPI_MISO, ALTFUNCTION, PUSHPULL, HIGHSPEED, NOPULL, AF5);
-	GPIOInit(GPIOB, SPI_MOSI, ALTFUNCTION, PUSHPULL, HIGHSPEED, NOPULL, AF5);
-
-	
 	/* Turn on the clock for the GPIO whose pin to be configured */
 	if(SPIx == SPI1)	_SPI1_CLK_ENABLE();
 	else if(SPIx == SPI2)	_SPI2_CLK_ENABLE();
 	else if(SPIx == SPI3)	_SPI3_CLK_ENABLE();
-	
-	//Slave deselect
-	GPIOPinSet(GPIOB, SPI_NSS);
+
 	
 	/* Configure mode: master/slave */
 	SPIx->CR1 |= mode;	
@@ -40,12 +31,13 @@ void SPIInit(SPI_TypeDef *SPIx, uint32_t mode, uint32_t baudrate, uint32_t direc
 
 uint8_t SPISend(SPI_TypeDef *SPIx, uint8_t data){
 	SPIx->DR = data;
+	/*
 	//Wait until the data has been transmitted.
 	while (!(SPI1->SR & SPI_I2S_FLAG_TXE));
 	// Wait for any data on MISO pin to be received.
 	while (!(SPI1->SR & SPI_I2S_FLAG_RXNE));
 	//All data transmitted/received but SPI may be busy so wait until done.
 	while (SPI1->SR & SPI_I2S_FLAG_BSY);
-	
+	*/
 	return(SPI1->DR);
 }

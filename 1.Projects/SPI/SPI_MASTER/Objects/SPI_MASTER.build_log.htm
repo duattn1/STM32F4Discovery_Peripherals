@@ -17,27 +17,26 @@ Library Manager: ArmAr.exe V5.06 update 3 (build 300)
 Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
 CPU DLL:         SARMCM3.DLL V5.21a
 Dialog DLL:      DCM.DLL V1.13.8.0
-Target DLL:      UL2CM3.DLL V1.158.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
 Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
-E:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_MASTER\SPI_MASTER.uvprojx
-Project File Date:  03/19/2018
+E:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Master\SPI_Master.uvprojx
+Project File Date:  03/21/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Target 1'
 compiling GPIO_driver.c...
+compiling interrupt_controller.c...
 compiling main.c...
-Src\main.c(48): warning:  #111-D: statement is unreachable
-        return 0;
-Src\main.c: 1 warning, 0 errors
 compiling SPI_driver.c...
+compiling retarget_io.c...
 assembling startup_stm32f407xx.s...
 compiling system_stm32f4xx.c...
 linking...
-Program Size: Code=1032 RO-data=424 RW-data=8 ZI-data=1632  
-".\Objects\SPI_MASTER.axf" - 0 Error(s), 1 Warning(s).
+Program Size: Code=1508 RO-data=424 RW-data=12 ZI-data=1636  
+".\Objects\SPI_Master.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -48,13 +47,21 @@ Package Vendor: ARM
    * Component: CORE Version: 5.0.0
 
 Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.1.1.pack
+                Keil::Compiler:I/O:STDIN:ITM:1.1.0
+                Keil ARM Compiler extensions
+   * Component: STDIN Variant: ITM Version: 1.1.0
+   * Component: STDOUT Variant: ITM Version: 1.1.0
+   * Component: STDERR Variant: ITM Version: 1.1.0
+
+Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.9.0.pack
                 Keil::Device:Startup:2.5.0
                 STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
    * Component: Startup Version: 2.5.0
 
 <h2>Collection of Component include folders:</h2>
-  E:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_MASTER\RTE
+  E:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Master\RTE
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include
   C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
@@ -62,13 +69,22 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.0.0
 
+   * Component: Keil::Compiler:I/O:STDIN:ITM:1.1.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil::Compiler:I/O:STDOUT:ITM:1.1.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil::Compiler:I/O:STDERR:ITM:1.1.0
+      Source file:   Source\retarget_io.c
+
    * Component: Keil::Device:Startup:2.5.0
       Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
