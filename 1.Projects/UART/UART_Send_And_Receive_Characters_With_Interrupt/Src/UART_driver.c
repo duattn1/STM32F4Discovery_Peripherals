@@ -8,7 +8,7 @@
  *	@version 	V0.1
  */
  
-#include "../Inc/UART_driver.h"
+#include "UART_driver.h"
 
 void UARTInit(USART_TypeDef *UARTX, uint8_t wordLength, uint8_t stopBitNumber, uint8_t parityEnable, uint8_t oversampling, uint32_t baudrate){
 	/* Turn on the clock for the UART to be configured */
@@ -35,19 +35,21 @@ void UARTInit(USART_TypeDef *UARTX, uint8_t wordLength, uint8_t stopBitNumber, u
 	 *	Bit [3:0] is for fraction setup
 	 *	Bit [15:4] is for mantissa setup
 	 */
-	if(UARTX == USART1 || UARTX == USART6){ 
-		uint16_t mantissa, fraction;
+	uint16_t mantissa, fraction;
+	if(UARTX == USART1 || UARTX == USART6){ 		
 		fraction = baudrateFractionCal(APB2_CLK_SPEED, baudrate, oversampling);
 		mantissa = baudrateMantissaCal(APB2_CLK_SPEED, baudrate, oversampling);		
-		UARTX->BRR |= fraction << 0;
-		UARTX->BRR |= mantissa << 4;
-	} else { 
-		uint16_t mantissa, fraction;
+	} else { 		
 		fraction = baudrateFractionCal(APB1_CLK_SPEED, baudrate, oversampling);
-		mantissa = baudrateMantissaCal(APB1_CLK_SPEED, baudrate, oversampling);		
-		UARTX->BRR |= fraction << 0;
-		UARTX->BRR |= mantissa << 4;
+		mantissa = baudrateMantissaCal(APB1_CLK_SPEED, baudrate, oversampling);				
 	}
+	/* Check if 4 bits of fraction is overflow, then add 1 to mantissa and turn fraction to zero */
+	if((fraction >= 16 && oversampling == 0) || (fraction >= 8 && oversampling == 1)){
+	fraction = 0;
+	mantissa++;
+	}
+	UARTX->BRR |= fraction << 0;
+	UARTX->BRR |= mantissa << 4;
 	
 	/* Enable transmission */
 	UARTX->CR1 |= 1 << 3;
@@ -92,14 +94,14 @@ uint16_t baudrateMantissaCal(uint32_t srcClk, uint32_t baudrate, uint8_t oversam
 	return mantissa;
 }
 
-//duat: fraction must be more exact
+
 uint16_t baudrateFractionCal(uint32_t srcClk, uint32_t baudrate, uint8_t oversampling){
 	uint16_t remain;
 	float fraction, roundedFraction;
 	remain = srcClk%(8*(2 - oversampling)*baudrate);
 	fraction = (float)remain/(8*(2 - oversampling)*baudrate);
 	roundedFraction = fraction * 16;
-	//to round the Fraction
+	/* round the Fraction to the nearest real number*/
 	if((((uint16_t)(roundedFraction*10) - 10*(uint16_t)roundedFraction)) % 10 >= 5) roundedFraction = roundedFraction + 1;
 	
 	return (uint16_t)roundedFraction;

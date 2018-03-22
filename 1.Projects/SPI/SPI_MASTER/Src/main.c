@@ -8,9 +8,9 @@
  */ 
  
 #include "stm32f407xx.h"
-#include "../Inc/GPIO_driver.h"
-#include "../Inc/SPI_driver.h"
-#include "../Inc/interrupt_controller.h"
+#include "GPIO_driver.h"
+#include "SPI_driver.h"
+#include "interrupt_controller.h"
 
 volatile uint32_t ticks;
 

@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Inc;.\UnitTesting;.\UnitTesting\unity;.\UnitTesting\utilities</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

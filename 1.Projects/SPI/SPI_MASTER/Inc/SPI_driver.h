@@ -1,9 +1,20 @@
+/** @file SPI_driver.h
+ *  @brief Function prototypes for the SPI driver.
+ *
+ *  This contains the function prototypes for the SPI driver
+ *	and also macros, constants, variables needed.
+ *
+ *  @author 	Tran Nhat Duat (duattn)
+ *	@version 	V0.1
+ */
+
 #ifndef SPI_DRIVER_H_
 #define SPI_DRIVER_H_
 
 #include <stdint.h>
 #include "stm32f407xx.h"
 
+/* SPI status flags */
 #define SPI_I2S_FLAG_TXE				(0x01 << 1)
 #define SPI_I2S_FLAG_RXNE				(0x01 << 0)
 #define SPI_I2S_FLAG_BSY 				(0x01 << 7)
@@ -46,11 +57,32 @@
 #define SPI_MSB_FIRST 					(0x00 << 7)
 #define SPI_LSB_FIRST 					(0x01 << 7)
 
+/* SPI clock enable Macro functions */
 #define _SPI1_CLK_ENABLE() 				(RCC->APB2ENR |= RCC_APB2ENR_SPI1EN)
 #define _SPI2_CLK_ENABLE() 				(RCC->APB1ENR |= RCC_APB1ENR_SPI2EN)
 #define _SPI3_CLK_ENABLE() 				(RCC->APB1ENR |= RCC_APB1ENR_SPI3EN)
 
-void SPIInit(SPI_TypeDef *SPIx, uint32_t mode, uint32_t baudrate, uint32_t direction, uint32_t cpha, uint32_t cpol, uint32_t size, uint32_t firstBit);
+/** @brief Configure a SPI.
+ *
+ *  @param SPIx The address of SPI used to send the character.
+ *  @param mode The mode to be configured: Master or Slave.
+ *  @param clockPrescaler The prescaler to apply for SPI clock speed.
+ *  @param direction The direction mode to be selected.
+ *  @param cpha The clock phase mode selection.
+ *  @param cpol The clock polarity mode selection.
+ *  @param size Selection of 8-bit or 16-bit data frame.
+ *  @param firstBit Selection of tranferring MSB or LSB first.
+ *
+ *  @return void.
+ */
+void SPIInit(SPI_TypeDef *SPIx, uint32_t mode, uint32_t clockPrescaler, uint32_t direction, uint32_t cpha, uint32_t cpol, uint32_t size, uint32_t firstBit);
 
+/** @brief Send a character over the SPI
+ *
+ *  @param SPIx The address of SPI used to send the character.
+ *  @param data The character to be sent.
+ *
+ *  @return void.
+ */
 uint8_t SPISend(SPI_TypeDef *SPIx, uint8_t data);
 #endif /*  SPI_DRIVER_H_ */

@@ -8,11 +8,10 @@
  */ 
  
 #include "stm32f407xx.h"
-#include "../Inc/GPIO_driver.h"
-#include "../Inc/UART_driver.h"
-#include "../Inc/interrupt_controller.h"
+#include "GPIO_driver.h"
+#include "UART_driver.h"
+#include "interrupt_controller.h"
 
-#define BUFFER_SIZE 256
 
 int main(void){		
 	/* Configure PB10 as TX and PB11 as RX */

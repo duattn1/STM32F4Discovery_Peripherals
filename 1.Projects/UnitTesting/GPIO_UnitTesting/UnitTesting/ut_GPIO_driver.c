@@ -1,3 +1,12 @@
+/** @file ut_GPIO_driver.c
+ *  @brief Function implementation for the Unit testing of GPIO driver.
+ *
+ *  This contains the function implementation for the Unit testing of GPIO driver.
+ *
+ *  @author 	Tran Nhat Duat (duattn)
+ *	@version 	V0.1
+ */
+
 #include "ut_GPIO_driver.h"
 
 void (*f[])(GPIO_TypeDef*) = {
@@ -38,7 +47,6 @@ void ut_GPIOInitNoAF_3(GPIO_TypeDef *GPIOx){
 
 /*
 16 AF TCs
-
 */
 void ut_GPIOInitAF_0(GPIO_TypeDef *GPIOx){		
 	tc_GPIOInit(GPIOx, 0, ALTFUNCTION, PUSHPULL, LOWSPEED, NOPULL, AF0);

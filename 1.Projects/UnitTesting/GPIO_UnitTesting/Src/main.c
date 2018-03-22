@@ -8,7 +8,7 @@
  */ 
  
 #include "stm32f407xx.h"
-#include "../UnitTesting/ut_main.h"
+#include "ut_main.h"
 
 extern int runAllTest(void);
 

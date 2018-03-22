@@ -7,7 +7,7 @@
  *	@version 	V0.1
  */ 
 
-#include "../Inc/GPIO_driver.h"
+#include "GPIO_driver.h"
 
 void GPIOInit(GPIO_TypeDef *GPIOx, uint8_t pinNumber, uint8_t mode, uint8_t type, uint8_t speedType, uint8_t pullType, uint8_t altFunction){
 	

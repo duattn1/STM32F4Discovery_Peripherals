@@ -8,7 +8,7 @@
  */ 
  
 #include "stm32f407xx.h"
-#include "../Inc/GPIO_driver.h"
+#include "GPIO_driver.h"
 
 /* STM32F4 Discovery LED on Port D */
 #define GREENLED			12
@@ -43,6 +43,5 @@ int main(void){
 		GPIOPinReset(GPIOD, REDLED);
 		delay(1000);
 	}	
-	
 	return 0;
 }

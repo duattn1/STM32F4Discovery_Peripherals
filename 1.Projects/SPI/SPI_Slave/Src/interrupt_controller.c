@@ -1,5 +1,13 @@
-#include "../Inc/interrupt_controller.h"
+/** @file interrupt_controller.c
+ *  @brief Function implementation for the interrupt.
+ *
+ *  This contains the function implementation for the interrupt.
+ *
+ *  @author 	Tran Nhat Duat (duattn)
+ *	@version 	V0.1
+ */ 
 
+#include "interrupt_controller.h"
 
 void NVICSetup(void){	
 	SPIInterruptConfig();

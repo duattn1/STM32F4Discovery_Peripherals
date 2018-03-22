@@ -1,67 +1,0 @@
-Dependencies for Project 'SPI_Slave', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Src\GPIO_driver.c)(0x5AAE1FD3)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F407xx --C99-o .\objects\gpio_driver.o --omf_browse .\objects\gpio_driver.crf --depend .\objects\gpio_driver.d)
-I (Src\../Inc/GPIO_driver.h)(0x5AAE1FD3)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x572C13BE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h)(0x5735A3AE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x572C13C0)
-F (.\Src\main.c)(0x5AB1BE99)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F407xx --C99-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x572C13BE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h)(0x5735A3AE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x572C13C0)
-I (Src\../Inc/GPIO_driver.h)(0x5AAE1FD3)
-I (Src\../Inc/SPI_driver.h)(0x5AB125D1)
-I (Src\../Inc/interrupt_controller.h)(0x5AB1B791)
-F (.\Src\SPI_driver.c)(0x5AB133A8)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F407xx --C99-o .\objects\spi_driver.o --omf_browse .\objects\spi_driver.crf --depend .\objects\spi_driver.d)
-I (Src\../Inc/SPI_driver.h)(0x5AB125D1)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x572C13BE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h)(0x5735A3AE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x572C13C0)
-I (Src\../Inc/GPIO_driver.h)(0x5AAE1FD3)
-F (.\Src\interrupt_controller.c)(0x5AB1C854)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F407xx --C99-o .\objects\interrupt_controller.o --omf_browse .\objects\interrupt_controller.crf --depend .\objects\interrupt_controller.d)
-I (Src\../Inc/interrupt_controller.h)(0x5AB1B791)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x572C13BE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h)(0x5735A3AE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x572C13C0)
-I (Src\../Inc/../Inc/SPI_driver.h)(0x5AB125D1)
-F (.\Inc\GPIO_driver.h)(0x5AAE1FD3)()
-F (.\Inc\SPI_driver.h)(0x5AB125D1)()
-F (.\Inc\interrupt_controller.h)(0x5AB1B791)()
-F (C:\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.1.1\Source\retarget_io.c)(0x567A2864)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F407xx --C99-o .\objects\retarget_io.o --omf_browse .\objects\retarget_io.crf --depend .\objects\retarget_io.d)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x574E4C36)
-I (E:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE\RTE_Components.h)(0x5AB13562)
-F (RTE\Device\STM32F407VGTx\startup_stm32f407xx.s)(0x572C13BE)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx.lst --xref -o .\objects\startup_stm32f407xx.o --depend .\objects\startup_stm32f407xx.d)
-F (RTE\Device\STM32F407VGTx\system_stm32f4xx.c)(0x572C13BC)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-IE:\C\GIT\STM32F407_Projects\1.Projects\SPI\SPI_Slave\RTE-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F407xx --C99-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x572C13BE)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x572C13BE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h)(0x5735A3AE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E4C36)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h)(0x57353CB6)
-I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x572C13C0)

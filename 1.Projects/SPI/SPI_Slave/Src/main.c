@@ -8,12 +8,13 @@
  */ 
  
 #include "stm32f407xx.h"
-#include "../Inc/GPIO_driver.h"
-#include "../Inc/SPI_driver.h"
-#include "../Inc/interrupt_controller.h"
+#include "GPIO_driver.h"
+#include "SPI_driver.h"
+#include "interrupt_controller.h"
 
 
 int main(void){		
+	/* Init SPI3 as slave */
 	GPIOInit(GPIOC, 10, ALTFUNCTION, PUSHPULL, HIGHSPEED, NOPULL, AF6);
 	GPIOInit(GPIOC, 11, ALTFUNCTION, PUSHPULL, HIGHSPEED, NOPULL, AF6);
 	GPIOInit(GPIOC, 12, ALTFUNCTION, PUSHPULL, HIGHSPEED, NOPULL, AF6);

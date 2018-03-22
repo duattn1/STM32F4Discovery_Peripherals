@@ -8,7 +8,7 @@
  */ 
  
 #include "stm32f407xx.h"
-#include "../Inc/GPIO_driver.h"
+#include "GPIO_driver.h"
 
 /* STM32F4 Discovery LED on Port D */
 #define GREEN_LED				12
@@ -69,6 +69,5 @@ int main(void){
 			}
 		}
 	}
-	
 	return 0;
 }
