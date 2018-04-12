@@ -32,7 +32,7 @@ void USARTxConfig(USART_TypeDef *UARTx){
 
 
 void USART3_IRQHandler(void){			
-	while(!(USART3->SR & USART_FLAG_RXNE));
+	while(!(USART3->SR & USART_SR_FLAG_RXNE));
 	receivedChar = (uint8_t)USART3->DR;
 	
 	if(receivedChar){

@@ -29,7 +29,8 @@ int main(void){
 	* Max AHB:  SYSCLK
 	* Max APB1: SYSCLK/4 = 48MHz
 	* Max APB2: SYSCLK/2 = 86MHz
-	* + enable sys clock output 2 with clock divider = 4 */
+	* + enable sys clock output 2 with clock divider = 4 
+	*/
 	RCC->CFGR =
           0x0                           /* Clock output 2 is SYSCLK (RCC_CFGR_MCO2) */
         | ( 0x6 << 27)                  /* Clock output divider */
@@ -71,9 +72,8 @@ int main(void){
 	/* Wait for SYSCLK to be PPL */
 	while((RCC->CFGR & RCC_CFGR_SW_PLL) != RCC_CFGR_SW_PLL){};
 
-
 	/*Configure the LED on PD14 to test new system clock*/
-	GPIOInit(GPIOD, 14, OUTPUT, PUSHPULL, VERYHIGHSPEED, NOPULL, NOAF);
+	GPIOInit(GPIOD, 14, GPIO_MODER_OUTPUT, GPIO_OTYPER_PUSHPULL, GPIO_OSPEEDR_HIGH_SPEED, GPIO_PUPDR_NOPULL, GPIO_AFR_NO_ALTERNATE_FUNCTION);
 	
 	/* Configure SysTick interrupt every 1ms */
 	SysTick_Config(168000000/1000);

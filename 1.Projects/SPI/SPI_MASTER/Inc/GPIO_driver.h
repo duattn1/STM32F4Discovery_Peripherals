@@ -14,30 +14,30 @@
 #include <stdint.h>
 #include "stm32f407xx.h"
 
-#define NOAF 					0
+#define GPIO_AFR_NO_ALTERNATE_FUNCTION			0
 
 /* GPIO output mode */
-#define INPUT 						0x00
-#define OUTPUT 						0x01
-#define ALTFUNCTION 			0x02
-#define ANALOG 						0x03
+#define GPIO_MODER_INPUT 									0x00
+#define GPIO_MODER_OUTPUT 								0x01
+#define GPIO_MODER_ALTERNATE_FUNCTION 		0x02
+#define GPIO_MODER_ANALOG 								0x03
 
 /* GPIO ouput type */
-#define PUSHPULL 					0x00
-#define OPENDRAIN 				0x01
+#define GPIO_OTYPER_PUSHPULL 							0x00
+#define GPIO_OTYPER_OPENDRAIN 						0x01
 
 /* GPIO ouput speed */
-#define LOWSPEED 					0x00
-#define MEDIUMSPEED 			0x01
-#define HIGHSPEED 				0x02
-#define VERYHIGHSPEED 		0x03
+#define GPIO_OSPEEDR_LOW_SPEED 						0x00
+#define GPIO_OSPEEDR_MEDIUM_SPEED 				0x01
+#define GPIO_OSPEEDR_HIGH_SPEED 					0x02
+#define GPIO_OSPEEDR_VERY_HIGH_SPEED 			0x03
 
-/* GPIO pull-up pull-down */
-#define NOPULL 						0x00
-#define PULLUP 						0x01
-#define PULLDOWN					0x02
+/* GPIO pull-up pull-down resistor select */
+#define GPIO_PUPDR_NOPULL 								0x00
+#define GPIO_PUPDR_PULLUP 								0x01
+#define GPIO_PUPDR_PULLDOWN								0x02
 
-/* GPIO AF mode */
+/* GPIO Alternate Function mode */
 typedef enum{
 	AF0 =		0x00,
 	AF1 =		0x01,

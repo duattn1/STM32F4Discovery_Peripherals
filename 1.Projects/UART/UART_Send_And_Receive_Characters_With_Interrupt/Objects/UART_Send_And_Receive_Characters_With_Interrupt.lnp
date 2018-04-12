@@ -1,0 +1,11 @@
+--cpu Cortex-M4.fp
+".\objects\gpio_driver.o"
+".\objects\interrupt_controller.o"
+".\objects\main.o"
+".\objects\uart_driver.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\UART_Send_And_Receive_Characters_With_Interrupt.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\UART_Send_And_Receive_Characters_With_Interrupt.map" -o .\Objects\UART_Send_And_Receive_Characters_With_Interrupt.axf

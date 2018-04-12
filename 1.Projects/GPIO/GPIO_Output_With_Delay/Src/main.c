@@ -16,6 +16,8 @@
 #define REDLED				14
 #define BLUELED				15
 
+#define APPLICATION_ADDRESS        0x08010000
+
 volatile uint32_t ticks;
 
 void delay(volatile uint32_t time)
@@ -32,16 +34,19 @@ void SysTick_Handler(void){
 }
 
 int main(void){	
-	GPIOInit(GPIOD, REDLED, OUTPUT, PUSHPULL, VERYHIGHSPEED, NOPULL, NOAF);
+	SCB->VTOR = APPLICATION_ADDRESS;
+	__enable_irq();
 	
+	GPIOInit(GPIOD, BLUELED, GPIO_MODER_OUTPUT, GPIO_OTYPER_PUSHPULL, GPIO_OSPEEDR_VERY_HIGH_SPEED, GPIO_PUPDR_NOPULL, GPIO_AFR_NO_ALTERNATE_FUNCTION);
+
+	GPIOPinSet(GPIOD, BLUELED);
 	/* Configure SysTick interrupt every 1ms */
 	SysTick_Config(SystemCoreClock/1000);
 	
 	while(1){
-		GPIOPinSet(GPIOD, REDLED);
+		GPIOPinSet(GPIOD, BLUELED);
 		delay(1000);
-		GPIOPinReset(GPIOD, REDLED);
+		GPIOPinReset(GPIOD, BLUELED);
 		delay(1000);
 	}	
-	return 0;
 }
