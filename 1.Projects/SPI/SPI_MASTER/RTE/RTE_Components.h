@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'SPI_Master' 
+ * Project: 'SPI_MASTER' 
  * Target:  'Target 1' 
  */
 

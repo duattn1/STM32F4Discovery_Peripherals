@@ -1,0 +1,11 @@
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\FLASH\FLASH_Programming\FLASH_Programming.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\FLASH\FLASH_Programming_Copy\FLASH_Programming.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\GPIO\GPIO_Input_Button_Debounce\GPIO_Input_Button_Debounce.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\GPIO\GPIO_Output_With_Delay\GPIO_Output_With_Delay.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\Other\LED_Matrix_On_MAX7219\LED_Matrix_On_MAX7219.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\Other\SYS_CLK_Setup\SYS_CLK_Setup.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\SPI\SPI_MASTER\SPI_MASTER.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\SPI\SPI_Slave\SPI_Slave.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\UART\UART_Redirect_STDIO_To_UART\UART_Redirect_STDIO_To_UART.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\UART\UART_Send_And_Receive_Characters\UART_Send_And_Receive_Characters.uvprojx
+E:\C\GIT\STM32F4Discovey_Peripheral_Projects\1.Projects\UART\UART_Send_And_Receive_Characters_With_Interrupt\UART_Send_And_Receive_Characters_With_Interrupt.uvprojx
